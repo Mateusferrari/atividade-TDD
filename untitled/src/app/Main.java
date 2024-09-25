@@ -1,8 +1,8 @@
+package app;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
 
         Scanner scanner = new Scanner(System.in);
 
@@ -24,7 +24,7 @@ public class Main {
         scanner.close();
     }
 
-    private static boolean podeEquilibrar(int[] pesos, int ladoA, int ladoB) {
+    public static boolean podeEquilibrar(int[] pesos, int ladoA, int ladoB) {
         if (Math.abs(ladoA - ladoB) > 5) {
             return false;
         }
